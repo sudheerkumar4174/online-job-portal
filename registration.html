@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>REGISTRATION FORM</title>
+        <link rel="stylesheet" href="css/register.css" type="text/css">
+         
+    </head>
+    <body onload='document.form1.text1.focus()'>
+    <div class="main">
+        <div class="register">
+            <h1>REGISTER HERE</h1>
+            <frameset id="flag">
+                <center> 
+                    <form method="post" name="form1" action="register.php">
+                <label>FIRST NAME:</label><br>
+                <input type="text" id="name" placeholder="enter your first name" name="fname"><br>
+                <br>
+                <label>LAST NAME</label><br>
+                <input type="text" id="name" placeholder="enter your last name" name="lname"><br>
+                <br>
+                <label>ENTER YOUR DATE OF THE BIRTH</label><br>
+                <input type="date" id="name" placeholder="enter date of birth here" name="dob"><br><br>
+                <span id="name174"></span>
+                
+                <div class="name1">
+                <label>ENTER GMAIL</label>
+                 <input type="text" name='text1' id="name" placeholder="enter your gmail" required><br><br>
+                
+                </div>
+                 <script src="email-validation.js"></script>
+             
+             <label>ENTER MOBILE NUMBER</label><br>
+             <input type="number" id="name" placeholder="enter your mobile no" name="mobileno"><br><br>
+                <label>ENTER GENDER</label><br>
+                <input type="radio" id="male" name="gender">
+                &nbsp;
+                <span id="male">MALE</span><br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender">
+                <span id="female">FEMALE</span><br><br>
+                <label>LANG KNOWN</label><br>
+                <input type="checkbox" id="telugu" name="lang">
+                <span id="telugu">TELUGU</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="hindi" name="lang">
+                <span id="hindi">HINDI</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="eng" name="lang">
+                <span id="eng">ENGLISH</span><br><br>
+                <label>ENTER SKILLS</label><br>
+                <input type="number" id="name" placeholder="enter your skills" name="skills"><br><br>
+                <label>ENTER EXPERIENCE</label><br>
+                <input type="text" id="name" placeholder="enter your experiene if fresher enter zero " name="exp"><br><br>
+                <label>UPLOAD YOUR CV FILE</label><br>
+                <input type="file" id="name" placeholder="UPLOAD YOUR CV FILE"><br><br>
+                 <class="submit"><input type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/>
+                </form>
+                 </center>
+
+        </frameset>
+        </div>
+    </div>
+</html>
