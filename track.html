@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/track.css">
+  <script>
+    function myFunction()
+     {
+      let a=document.getElementById("t1").value;
+      let b=a%10;
+      if(b>=0 && b<=4)
+      {
+        alert('your apllication is under verification');
+      }
+      else if(b>=5 && b<=7)
+      {
+        alert('sorry your application is rejected');
+      }
+      else
+      {
+        alert('your are selected wait for further updates')
+      }
+    }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <div class="track_id">
+      <h2>Track Id</h2>
+      <label for="text">Track Id</label>
+      <input type="text" id="t1" placeholder="Enter Track Id">
+      <br>
+      <label for="Password">Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <br>
+      <input type="button" value="Track"  onclick="myFunction()">
+    </div>
+  </div>
+</body>
+</html>
